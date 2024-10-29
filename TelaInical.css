@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.imagem-teste{
+    width: 100%;
+    height: 200vh;
+}
+
+nav {
+    background-color: black;
+    height: 10vh;
+    justify-content: space-between;
+    flex: 1;
+    display: flex;
+}
+
+nav img {
+    height: 10vh;
+    padding: 1vh;
+}
+
+nav ul img {
+    height: 10vh;
+    padding: 3vh;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 10vh;
+    text-decoration: none;
+}
+
+nav li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(23, 23, 23);
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: ;
+    height: 100vh;
+    justify-content: left;
+}
+/*fim do navegador*/
+footer{
+    gap: 20vh;
+    color: white;
+    background-color: black;
+}
+.footer-conteiner{
+    padding: 20px;
+    display: flex;
+    gap: 20vh;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+}
+.footer-section ul{
+    list-style-type: none;
+}
+.footer-section ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.footer-section ul li a:hover{
+    color: yellow;
+}
+.t{
+    text-align: center;
+}
+/*fim do footer*/
+.cards_conteiner{
+    margin: 10px 0 10px 0 ;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.cards_conteiner .card img{
+    width: 100%;
+}
+.cards_conteiner .card{
+    width: 20vh;
+    margin: 2%;
+    border-radius: 50px;
+    transition: width 0.5s;
+}
+.card button{
+    width: 20vh;
+    transition: width 0.5s;
+}
+.card:hover button{
+    width: 50.7vh;
+}
+.cards_conteiner .card:hover{
+    width: 300px;
+
+}
