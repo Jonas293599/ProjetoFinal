@@ -12,12 +12,8 @@ body {
     border: 0;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.932);
     height: 100vh;
-    
-}
-.imagem-teste{
-    width: 100%;
-    height: 200vh;
 }
 
 nav {
@@ -51,7 +47,7 @@ nav li a,
     display: inline-block;
     color: white;
     text-align: center;
-    width: 10vh;
+    width: 20vh;
     text-decoration: none;
 }
 
@@ -72,6 +68,7 @@ nav .dropdown-content {
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    transition: ease-in-out 0.6s;
 }
 
 nav .dropdown-content a {
@@ -87,9 +84,8 @@ nav .dropdown-content a:hover {
 }
 
 nav .dropdown:hover .dropdown-content {
-    display: ;
+    display: block;
     height: 100vh;
-    justify-content: left;
 }
 /*fim do navegador*/
 footer{
@@ -107,6 +103,10 @@ footer{
 }
 .footer-section ul{
     list-style-type: none;
+    text-align: center;
+}
+.footer-section ul li{
+    padding: 3px;
 }
 .footer-section ul li a{
     text-decoration: none;
@@ -121,17 +121,19 @@ footer{
 }
 /*fim do footer*/
 .cards_conteiner{
-    margin: 10px 0 10px 0 ;
-    width: 100%;
-    height: 50%;
-    background-color: black;
+    width: 70%;
+    height: 450px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+    gap: 10px;
+    position: relative; left: 50%; transform: translate(-50%); 
 }
 .cards_conteiner .card img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(87, 87, 87, 0.2);
 }
 .cards_conteiner .card{
     width: 20vh;
@@ -141,12 +143,14 @@ footer{
 }
 .card button{
     width: 20vh;
+    height: 10vh;
+    border-radius: 5vh;
     transition: width 0.5s;
 }
 .card:hover button{
-    width: 50.7vh;
+    width: 47vh;
 }
 .cards_conteiner .card:hover{
-    width: 300px;
+    width: 100%;
 
 }
