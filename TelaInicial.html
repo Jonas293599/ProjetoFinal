@@ -15,32 +15,53 @@
             <nav>
                 <ul>
                     <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn"><img src="Icons/menu.png" alt="" class=""></a>
-                    <div class="dropdown-content">
-                        <a href="TelaInicial.html">Inicio</a>
-                        <a href="#manutencao">Manutenção</a>
-                        <a href="#customizacao">Customização</a>
-                        <a href="#seguros">Seguros</a>
-                        <a href="#contatos">Contatos</a>
-                        <a href="#sobre">Sobre nós</a>
-                    </div>
+                        <a href="javascript:void(0)" class="dropbtn"><img src="Icons/menu.png" alt="" class=""></a>
+                        <div class="dropdown-content">
+                            <a href="TelaInicial.html">Inicio</a>
+                            <a href="#manutencao">Manutenção</a>
+                            <a href="#customizacao">Customização</a>
+                            <a href="#seguros">Seguros</a>
+                            <a href="#contatos">Contatos</a>
+                            <a href="#sobre">Sobre nós</a>
+                        </div>
                     </li>
                 </ul>
-                <img src="IMGs/P(Icone).png" alt="">
+                <ul class="buttons">
+                    <a href="TelaLogin.html">
+                        <li class="button-login">Logar-se</li>
+                    </a>
+                    <a href="">
+                        <li class="button-register">Registrar-se</li>
+                    </a>
+                </ul>
+                <a href="TelaInicial.html"><img src="IMGs/P(Icone).png"></a>
             </nav>
         </header>
+        <div class="text-ini">
+            <p>A ecolha que muda tudo e todos</p>
+            <h2>POK<span style="color: yellow;">CAR</span></h2>
+            <h3>Ainda sem conquistas</h3>
+            <br>
+            <h4>Veja mais</h4>
+            <a href=""><button class="btn-ini">Ofertas</button></a>
+            <a href=""><button class="btn-ini">Loja</button></a>
+        </div>
         <div class="cards_conteiner">
             <div class="card">
                 <img src="IMGs/hatch.jpg" alt="">
+                <h1>Hatch</h1>
             </div>
             <div class="card">
                 <img src="IMGs/suv.jpg" alt="">
+                <h1>SUV</h1>
             </div>
             <div class="card">
                 <img src="IMGs/picapi.jpg" alt="">
+                <h1>Picape</h1>
             </div>
             <div class="card">
                 <img src="IMGs/esportivo.jpg" alt="">
+                <h1>Esport</h1>
             </div>
         </div>
         <footer>
@@ -78,6 +99,13 @@
             </div>
         </footer>
     </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).mousemove(function (event) {
+            $('.pointer').css({ left: event.pageX, top: event.pageY });
+        })
+    </script>
 </body>
 
 </html>

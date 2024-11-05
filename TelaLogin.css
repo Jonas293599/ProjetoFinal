@@ -17,24 +17,7 @@ body {
     background-attachment: fixed;
 }
 
-/*texto e botao inicial*/
-.text-ini{
-    padding: 20vh;
-}
-.text-ini, p, h1, h2, h3{
-    color: rgb(219, 219, 219);
-}
-.text-inic h4{
-    font-size: x-large;
-}
-.btn-ini{
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 10px 15px;
-}
-/* navegador */
+
 nav .buttons{
     justify-content: end;
     flex: 1;
@@ -68,9 +51,7 @@ nav {
     justify-content: space-between;
     flex: 1;
     display: flex;
-    position: fixed;
     width: 100%;
-    
 }
 
 nav img {
@@ -136,73 +117,114 @@ nav .dropdown:hover .dropdown-content {
     display: block;
     height: 100vh;
 }
-/*fim do navegador*/
-/*começo do footer*/
-footer{
-    gap: 20vh;
-    color: white;
-    background-color: black;
-}
-.footer-conteiner{
-    padding: 20px;
-    display: flex;
-    gap: 20vh;
-    justify-content: space-between;
-    color: white;
-    background-color: black;
-}
-.footer-section ul{
-    list-style-type: none;
-    text-align: center;
-}
-.footer-section ul li{
-    padding: 3px;
-}
-.footer-section ul li a{
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-}
-.footer-section ul li a:hover{
-    color: yellow;
-}
-.t{
-    text-align: center;
-}
-/*fim do footer*/
-.cards_conteiner{
-    width: 125vh;
-    height: 50vh;
+.container-login{
+    top: 35vh;
+    position: relative;
+    width: 256px;
+    height: 256px;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    position: relative; left: 50%; transform: translate(-50%); 
-    margin-bottom: 10vh;
+    align-items: center;
+    position: relative; left: 50%; transform: translate(-50%);
 }
-.cards_conteiner .card img{
+.container-login span{
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 6px;
+    background: white;
+    border-radius: 8px;
+    transform-origin: 128px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: blink 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+}
+@keyframes blink{
+    0%{
+        background: black;
+    }
+    25%{
+        background: gray;
+    }
+}
+.login-box{
+    position: absolute;
+    width: 400px;
+}
+form{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid rgba(87, 87, 87, 0.2);
-    filter: blur(5px);
-    transition: filter 0.5s;
+    padding: 0 50px;
 }
-.cards_conteiner .card:hover img{
-    filter: blur(0px);
-}
-.cards_conteiner .card{
-    width: 17vh;
-    margin: 2%;
-    border-radius: 50px;
-    transition: width 0.5s;
-}
-h1{
+h2{
+    font-size: 2em;
+    color: yellow;
     text-align: center;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
 }
-.cards_conteiner .card:hover{
+.input-box{
+    position: relative;
+    margin: 25px 0;
+}
+input{
     width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: white;
+    padding: 0 20px;
+    transition: 0.5s ease;
+}
+input:focus{
+    border-color: gray;
+}
+label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s ease;
+}
+input:focus~label{
+    top: -6px;
+    font-size: .8em;
+    background: gray;
+    padding: 0 6px;
+    color: black;
+    border-radius: 5px 5px 0 0;
+}
+.forgot-pass{
+    margin: -15px 0 10px;
+    text-align: center;
+}
+.forgot-pass a{
+    font-size: .85em;
+    color: white;
+    text-decoration: none;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: yellow;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+}
+.signup-link{
+    margin: 20px 0 10px;
+    text-align: center;
+}
+.signup-link a{
+    font-size: 1em;
+    color: yellow;
+    text-decoration: none;
+    font-weight: 600;
 }
